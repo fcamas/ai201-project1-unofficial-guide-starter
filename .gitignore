@@ -1,20 +1,21 @@
-# API keys — never commit these
+# API key — never commit this
 .env
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# ChromaDB — delete this folder to force re-ingestion
+chroma_db/
 
 # Python
 __pycache__/
 *.py[cod]
 *.egg-info/
-.venv/
-venv/
-env/
+.eggs/
 
-# Jupyter
-.ipynb_checkpoints/
-
-# ChromaDB local storage
-chroma_db/
-chroma/
-
-# macOS
+# OS
 .DS_Store
+Thumbs.db
+*.pdf
